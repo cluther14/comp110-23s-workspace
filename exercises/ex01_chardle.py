@@ -1,6 +1,6 @@
 """EX01 Chardle!"""
 
-__author__ = 730485997
+__author__ = "730485997"
 
 word: str = input("Enter a 5-character word: ")
 if len(word) != 5:
@@ -12,16 +12,16 @@ if len(letter) != 1:
     exit()
 count: int = 0
 
-print("Searching for "  + letter +   " in "  + word)
+print("Searching for " + letter + " in "  + word)
 
 
 if word[0] == letter:
-    print( letter + " found at index 0" )   
+    print(letter + " found at index 0" )   
     count += 1 
 
 
 if word[1] == letter:
-    print( letter + " found at index 1")
+    print(letter + " found at index 1")
     count += 1 
 
 if word[2] == letter:
@@ -29,27 +29,27 @@ if word[2] == letter:
     count += 1 
 
 if word[3] == letter:
-    print( letter + " found at index 3 ")
+    print(letter + " found at index 3 ")
     count += 1 
 
 if word[4] == letter:   
-    print( letter + " found at index 4 ") 
+    print(letter + " found at index 4 ") 
     count += 1 
 
 if count == 1:
-    print("1 instance of "  + letter +  " found in " + word)
+    print("1 instance of " + letter + " found in " + word)
 
 if count == 2:
-    print("2 instance of "  + letter +  " found in " + word)
+    print("2 instances of " + letter + " found in " + word)
 
 if count == 3:
-    print("3 instance of "  + letter +  " found in " + word) 
+    print("3 instances of " + letter + " found in " + word) 
 
 if count == 4:
-    print("4 instance of "  + letter +  " found in " + word)
+    print("4 instances of " + letter + " found in " + word)
 
 if count == 5:
-    print("5 instance of "  + letter +  " found in " + word)
+    print("5 instances of " + letter + " found in " + word)
 
 if count == 0:
     print("No instances of " + letter + " found in " + word)
